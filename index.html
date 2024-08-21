@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Assignment chapter 31 to 38</title>
+
+    <a href="index2.html">chapter no 35-38</a>
+    <style>
+        body {
+            background-color: burlywood;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        
+    
+    </style>
+</head>
+
+<body>
+    <h1>JS Assignment- Chapter 31 to 34</h1>
+<p> Q no 1 : Write a program that displays current date and time in your browser.</p>
+
+<p> Q no 2: Write a program that alerts the current month in words.
+For example December.</p>
+
+<p>Q no 3 : Write a program that alerts the first 3 letters of the current day, for example if today is Sunday then alert will show Sun.</p>
+
+<p>Q no 4: Write a program that displays a message “It’s Fun day” if its Saturday or Sunday today.</p>
+
+<p> Q no 5: Write a program that shows the message “First fifteen days of the month” if the date is less than 16th of the month
+    else shows “Last days of the month”.</p>
+
+<p> Q no 6: Write a program that determines the minutes since midnight, Jan. 1, 1970 and assigns it to a variable that
+    hasn't been declared beforehand. Use any variable you like to represent the Date object.</p>
+
+<p>Q no 7: Write a program that tests whether it's before noon and alert “Its AM” else “its PM”.</p>
+
+<p> Q no 8: Write a program that creates a Date object for the last day of the last month of 2020 and assigns it to variable named
+    laterDate.</p>
+
+<p> Q no 9: Create a date object of the starting date of this Ramadan and alert the number of days past since 1st Ramadan?
+    Note: 1st Ramadan was on June 18, 2015.</p>
+
+<p>Q no 10:Write a program that displays in your browser the seconds that elapsed between the reference date and the
+    beginning of 2015.</p>
+
+<p> Q no 11: Create a Date object for the current date and time. Extract the hours, reset the date object an hour ahead and
+    finally display the date object in your browser.</p>
+
+<p> Q no 12: Write a program that creates a date object and show the date in an alert box that is reset to 100 years back?</p>
+
+<p> Q no 13: Write a program to ask the user about his age. Calculate and show his birth year in your browser.</p>
+
+<p> Q no 14: Write a program to generate your K-Electric bill in your
+    browser. All the amounts should be rounded off to 2
+    decimal places. Display the following fields:<br>
+    a. Customer Name <br>
+    b. Current Month <br>
+    c. Number of units <br>
+    d. Charges per unit <br>
+    e. Net Amount Payable (within Due Date) <br>
+    f. Late Payment Surcharge <br>
+    g. Gross Amount Payable (after Due Date) <br>
+    <br>
+    Where,
+    
+    Net Amount Payable (within Due Date) = Number of units * Charges per unit
+    & Gross Amount Payable (after Due Date) = Net Amount + Late Payment Surcharge</p>
+
+
+<h2>K-Electric Bill</h2> 
+
+<script>
+
+//  Q no 1 : current date and time in browser.
+// var rightNow = new Date();
+
+// document.write(rightNow); 
+
+
+//  Q no 2: current month in words.
+
+// Create a new Date object to get the current date and time
+
+// var now = new Date();
+
+// Get the current month as a number (0 for January, 11 for December)
+// var theMonth = now.getMonth();
+
+// Array of month names
+// var monthNames = ["January", "February", "March", "April", "May", "June", 
+    //   "July", "August", "September", "October", "November", "December"];
+
+// Get the current month name using the month number as an index
+// var currentMonth = monthNames[theMonth];
+
+// Display an alert with the current month
+// alert("Current Month: " + currentMonth);
+
+// Q no 3: alerts the first 3 letters of the current day:
+
+
+// var rightNow = new Date();
+
+// var dayNames = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+// var dayNumber = rightNow.getDay();
+
+// var currentDay = dayNames[dayNumber];
+
+// alert(currentDay);
+
+
+//  Q no 4: its funday:
+ 
+        // Array of day names
+        // var daysNames = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+        // // Create a new Date object for the current date and time
+        // var currentDate1 = new Date();
+
+        // //  Get the current day of the week as a number (0 for Sunday, 1 for Monday, etc.)
+        //     var currentDay = currentDate1.getDay(); 
+        // // Check if today is Saturday (6) or Sunday (0)
+        // if (currentDay === 0 || currentDay === 6) {
+        // alert("It's not a Fun Day");      
+        // } else {
+        // alert("It's a Fun Day");
+        // }
+
+
+
+    // Q no 5 : last days of the month: 
+
+//      // Create a new Date object to get the current date
+//      var rightNow = new Date();
+
+//    // Get the current date of the month (1 to 31)
+//     var dayOfMonth = rightNow.getDate();
+
+//    // Check if the day is less than 16
+//    if (dayOfMonth < 16) {
+//     // Show an alert for the first fifteen days of the month
+//     alert("First fifteen days of the month");
+//    } else {
+//     // Show an alert for the last days of the month
+//     alert("Last days of the month");
+//     }
+
+// Q no 6: 
+
+// // Create a new Date object for the current date and time
+// var now = new Date();
+
+// // Get the current date and time as a string
+// var currentDateString = now.toString();
+
+// // Create a Date object for January 1, 1970
+// var epochDate = new Date(0);
+
+// // Calculate the number of milliseconds between now and January 1, 1970
+// var millisecondsSinceEpoch = now - epochDate;
+
+// // Convert milliseconds to minutes
+// var minutesSinceEpoch = millisecondsSinceEpoch / 60000;
+
+// document.write(
+          
+//             "<p><strong>Current Date:</strong> " + currentDateString + "</p>" +
+//             "<p><strong>Elapsed milliseconds since January 1, 1970:</strong> " + millisecondsSinceEpoch + "</p>" +
+//             "<p><strong>Elapsed minutes since January 1, 1970:</strong> " + minutesSinceEpoch.toFixed(2) + "</p>"
+//         );
+// or alert can be shown as well
+
+ // Display the results
+//  alert(
+//             "Current Date: " + currentDateString + "\n" +
+//             "Elapsed milliseconds since January 1, 1970: " + millisecondsSinceEpoch + "\n" +
+//             "Elapsed minutes since January 1, 1970: " + minutesSinceEpoch.toFixed(2)
+//         );
+
+
+// Q no 7: Alert of Am or Pm 
+
+// // Create a new Date object for the current date and time
+// var now = new Date();
+
+// // Get the current hour (0 to 23)
+// var currentHour = now.getHours();
+
+// // Check if the current hour is before noon (i.e., less than 12)
+// if (currentHour < 12) {
+//     // Show an alert if it's before noon
+//     alert("It's AM");
+// } else {
+//     // Show an alert if it's noon or later
+//     alert("It's PM");
+// }
+
+//  Q no 8: that creates a Date object for the last day of the last month of 2020.
+
+//  // Create a Date object for December 31, 2020
+//  var laterDate = new Date(2020, 11, 31, 23, 59, 59); // Month is 0-based: 11 for December
+
+// // Format the date as a string
+// var dateString = laterDate.toString();
+
+// // Display the result using document.write
+// document.write(
+    
+//     "<p><strong>Last day of 2020:</strong> " + dateString + "</p>"
+// );
+
+//  Q no 9: get to know first day of Ramzan:
+
+// // Creating Date object for June 18, 2015 (1st Ramadan)
+// var ramadanStartDate = new Date(2015, 5, 18); // June is 5 because months are 0-based
+
+// // Creating a Date object for the current date
+// var currentDate = new Date();
+
+// // Calculating the difference in milliseconds between the two dates
+// var timeDifference = currentDate - ramadanStartDate;
+
+// // Converting  milliseconds to days
+// var daysDifference = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+
+// // Displaying the result using an alert
+// alert("Number of days since June 18, 2015: " + daysDifference);
+
+
+//  Q no 10: Write a program that displays in your browser the seconds.......
+
+// // Define the reference date (e.g., Sat Dec 05 2015 22:50:16 GMT+0500 (PKT))
+// var referenceDate = new Date('Sat Dec 05 2015 22:50:16 GMT+0500');
+
+// // Define the beginning of 2015 (January 1, 2015, 00:00:00)
+// var beginningOf2015 = new Date('January 1, 2015 00:00:00 GMT+0500');
+
+// // Calculate the difference in milliseconds between the two dates
+// var millisecondsElapsed = referenceDate - beginningOf2015;
+
+// // Convert milliseconds to seconds
+// var secondsElapsed = millisecondsElapsed / 1000;
+
+// // Display the result in the browser using document.write
+// document.write(
+//     "<p>On reference date " + referenceDate.toString() + ",<br>" +
+//     Math.floor(secondsElapsed) + " seconds had passed since the beginning of 2015.</p>"
+// );
+
+
+//  Q no 11: Create a Date object for the current date and time.Extract the hours, reset the date object an hour ahead and
+// finally display the date object in your browser.
+
+// Create a Date object for the current date and time
+//   var currentDate = new Date();
+
+// Clone the current date object to create a new one for modification
+// var oneHourAgo = new Date(currentDate);
+
+// Subtract 1 hour (60 minutes * 60 seconds * 1000 milliseconds) from the new date object
+// oneHourAgo.setTime(oneHourAgo.getTime() - (60 * 60 * 1000));
+
+ // Display the current date and time
+// document.write("<p>Current date: " + currentDate.toString() + "</p>");
+
+ // Display the date and time one hour ago
+// document.write("<p>1 hour ago, it was: " + oneHourAgo.toString() + "</p>");
+
+// Q no 12 : show time 100 years back :
+
+// Create a Date object for the current date and time
+// var currentDate = new Date();
+
+// Clone the current date object to create a new one for modification
+// var hundredYearsBack = new Date(currentDate);
+
+// Set the date object to 100 years back by subtracting 100 years
+// hundredYearsBack.setFullYear(hundredYearsBack.getFullYear() - 100);
+
+// Display the current date and time on the browser
+// document.write("<p>Current date: " + currentDate.toString() + "</p>");
+
+// Display the date and time from 100 years ago on the browser
+// document.write("<p>100 years back, it was: " + hundredYearsBack.toString() + "</p>");
+
+//  Q no 13: Age and Birth Year on browser:
+
+// Ask the user for their age
+// var age = prompt("Please enter your age:");
+
+// Get the current year
+// var currentYear = new Date().getFullYear();
+
+// Calculate the birth year
+// var birthYear = currentYear - age;
+
+// Display the age and birth year on the browser
+// document.write("<p>Your age is " + age + ". Your birth year is " + birthYear + ".</p>");
+
+
+ // Define customer details and billing information
+    //  var customerName = "ABC Customer";
+    //     var currentMonth = "August"; // You can use a dynamic month here if needed
+    //     var numberOfUnits = 410;
+    //     var chargesPerUnit = 16;
+
+    //     // Calculate the Net Amount Payable (within Due Date)
+    //     var netAmountPayable = numberOfUnits * chargesPerUnit;
+
+    //     // Define Late Payment Surcharge
+    //     var latePaymentSurcharge = 950;
+
+    //     // Calculate the Gross Amount Payable (after Due Date)
+    //     var grossAmountPayable = netAmountPayable + latePaymentSurcharge;
+
+    //     // Display the bill details on the browser
+    //     document.write("<p>Customer Name: " + customerName + "</p>");
+    //     document.write("<p>Month: " + currentMonth + "</p>");
+    //     document.write("<p>Number of Units: " + numberOfUnits + "</p>");
+    //     document.write("<p>Charges per Unit: " + chargesPerUnit.toFixed(2) + "</p>");
+    //     document.write("<p>Net Amount Payable (within Due Date): " + netAmountPayable.toFixed(2) + "</p>");
+    //     document.write("<p>Late Payment Surcharge: " + latePaymentSurcharge.toFixed(2) + "</p>");
+    //     document.write("<p>Gross Amount Payable (after Due Date): " + grossAmountPayable.toFixed(2) + "</p>");
+
+
+
+    </script>
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

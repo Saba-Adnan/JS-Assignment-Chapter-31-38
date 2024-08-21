@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Assignment chapter no 35 to 38</title>
+
+    <style>
+        body {
+            background-color: burlywood;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            padding: 20px;
+           
+        }
+        
+    
+    </style>
+</head>
+
+<body>
+    <h1>JS Assignment- Chapter 35 to 38</h1>
+    <p> Q no 1: Write a function that displays current date & time in your browser.</p>
+    <p> Q no 2: Write a function that takes first & last name and then it greets the user using his full name.</p>
+    <p> Q no 3: Write a function that adds two numbers (input by user) and returns the sum of two numbers.</p>
+    <p> Q no 4: Calculator:
+        Write a function that takes three arguments num1, num2
+        & operator & compute the desired operation. Return and
+        show the desired result in your browser.</p>
+    <p> Q no 5: Write a function that squares its argument.</p>
+    <p> Q no 6: Write a function that computes factorial of a number.</p>
+    <p> Q no 7: Write a function that take start and end number as inputs & display counting in your browser.</p>
+    <p> Q no 8: Write a nested function that computes hypotenuse of a right angle triangle.
+        Hypotenuse2 = Base2 + Perpendicular2
+        
+        Take base and perpendicular as inputs.<br>
+        Outer function : calculateHypotenuse()<br>
+        Inner function: calculateSquare()</p>
+
+    <p> Q no 9: Write a function that calculates the area of a rectangle.<br>
+        A = width * height<br>
+        Pass width and height in following manner:<br>
+        
+        i. Arguments as value<br>
+        ii. Arguments as variables</p>
+
+    <p> Q no 10: Write a JavaScript function that checks whether a passed string is palindrome or not?<br>
+        A palindrome is word, phrase, or sequence that reads the same backward as forward, e.g., madam.</p>
+
+    <p> Q no 11: Write a JavaScript function that accepts a string as a parameter and converts the first letter of each word of the
+        string in upper case.<br>
+        EXAMPLE STRING : 'the quick brown fox'<br>
+        EXPECTED OUTPUT : 'The Quick Brown Fox'</p>
+
+    <p> Q no 12: Write a JavaScript function that accepts a string as a
+        parameter and find the longest word within the string.
+        EXAMPLE STRING : 'Web Development Tutorial'
+        EXPECTED OUTPUT : 'Development'</p>
+    <p> Q no 13: Write a JavaScript function that accepts two arguments, a string and a letter and the function will count the number of occurrences of the specified letter within the string.
+        Sample arguments : 'JSResourceS.com', 'o'</p>
+    <p> Q no 14: <h2>The Geometrizer</h2><br>
+        Create 2 functions that calculate properties of a circle, using the definitions here.
+        Create a function called calcCircumference:<br>
+        • Pass the radius to the function.<br>
+        • Calculate the circumference based on the radius, and output<br>
+        "The circumference is NN".<br>
+        Create a function called calcArea:<br>
+        • Pass the radius to the function.<br>
+        • Calculate the area based on the radius, and output "The areais NN".<br><br>
+        
+        Circumference of circle = 2πr<br>
+        Area of circle = πr2</p>
+</body>
+
+<script>
+
+// Q no 1: -------------------
+
+    // function displayDateTime() {
+    //         // Create a new Date object to get the current date and time
+    //         var now = new Date();
+
+    //         // Convert the date object to a string
+    //         var dateTimeString = now.toString();
+
+    //         // Display the date and time in the browser
+    //         document.write("<p>Current Date & Time: " + dateTimeString + "</p>");
+    //     }
+
+    //     // Call the function to display the date and time
+    //     displayDateTime();
+
+    //  Q no 2 : ------------------
+
+      // Function to greet the user
+    //   function greetUser(firstName, lastName) {
+            // Combine the first and last name
+            // var fullName = firstName + " " + lastName;
+
+            // Display a greeting message using the full name
+            // alert("Hello, " + fullName + "!");
+        // }
+
+        // Function to prompt user for their name and then greet them
+        // function getUserNameAndGreet() {
+            // Prompt the user for their first name
+            // var firstName = prompt("Please enter your first name:");
+
+            // Prompt the user for their last name
+            // var lastName = prompt("Please enter your last name:");
+
+            // Call the greetUser function with the entered names
+            // greetUser(firstName, lastName);
+        // }
+
+        // Call the function to get user input and greet them
+        // getUserNameAndGreet();
+
+
+//  Q no 3----------------------
+
+// // Function to add two numbers and return the sum
+// function addTwoNumbers(num1, num2) {
+//             // Convert input to numbers in case they are strings
+//             var sum = parseFloat(num1) + parseFloat(num2);
+//             return sum;
+//         }
+
+//         // Function to prompt user for numbers and display the result
+//         function getUserInputAndAdd() {
+//             // Prompt the user for the first number
+//             var number1 = prompt("Enter the first number:");
+
+//             // Prompt the user for the second number
+//             var number2 = prompt("Enter the second number:");
+
+//             // Call the addTwoNumbers function and store the result
+//             var result = addTwoNumbers(number1, number2);
+
+//             // Display the result using an alert
+//             alert("The sum of " + number1 + " and " + number2 + " is " + result + ".");
+//         }
+
+//         // Call the function to get user input and show the result
+//         getUserInputAndAdd();
+
+
+//  Q no 4-------------------------------
+
+
+// Function to perform calculation based on operator
+// function calculate(num1, num2, operator) {
+            // var result;
+
+            // Convert inputs to numbers
+            // num1 = parseFloat(num1);
+            // num2 = parseFloat(num2);
+
+            // Perform calculation based on operator
+            // switch (operator) {
+                // case '+':
+                //     result = num1 + num2;
+                //     break;
+                // case '-':
+                //     result = num1 - num2;
+                //     break;
+                // case '*':
+                //     result = num1 * num2;
+                //     break;
+                // case '/':
+                    // Check for division by zero
+        //             if (num2 !== 0) {
+        //                 result = num1 / num2;
+        //             } else {
+        //                 result = 'Cannot divide by zero';
+        //             }
+        //             break;
+        //         default:
+        //             result = 'Invalid operator';
+        //             break;
+        //     }
+
+        //     return result;
+        // }
+
+        // Function to prompt user for inputs and display result
+        // function getUserInputAndCalculate() {
+        //     // Prompt user for numbers and operator
+        //     var number1 = prompt("Enter the first number:");
+        //     var number2 = prompt("Enter the second number:");
+        //     var operator = prompt("Enter the operator (+, -, *, /):");
+
+        //     // Call calculate function and store result
+        //     var result = calculate(number1, number2, operator);
+
+        //     // Display the result using an alert
+        //     alert("The result of " + number1 + " " + operator + " " + number2 + " is " + result + ".");
+        // }
+
+        // Call the function to get user input and show the result
+        // getUserInputAndCalculate();
+
+//  Q no 5 : square a number ---------------
+
+ // Example usage: Prompt the user for a number and display the squared result
+    //  function promptAndSquare() {
+            // Prompt the user to enter a number
+            // var number = prompt("Enter a number to square:");
+
+            // Convert the input to a number
+            // var result = squareNumber(parseFloat(number));
+
+            // Display the result using an alert
+            // alert("The square of " + number + " is " + result + ".");
+        // }
+
+        // Call the function to prompt the user and show the squared result
+        // promptAndSquare();
+
+
+
+// Q no 6----------------------------
+
+ // Function to compute the factorial of a number
+
+//  function factorial(num) {
+//             if (num < 0) {
+//                 return "Factorial is not defined for negative numbers.";
+//             }
+//             var result = 1;
+//             for (var i = 1; i <= num; i++) {
+//                 result *= i;
+//             }
+//             return result;
+        // }
+
+        // Example usage: Prompt the user for a number and display the factorial
+        // function promptAndComputeFactorial() {
+            // Prompt the user to enter a number
+            // var number = prompt("Enter a number to compute its factorial:");
+
+            // Convert the input to a number and compute the factorial
+            // var result = factorial(parseInt(number));
+
+            // Display the result using an alert
+            // alert("The factorial of " + number + " is " + result + ".");
+        // }
+
+        // Call the function to prompt the user and show the factorial result
+        // promptAndComputeFactorial();
+
+
+//  Q no : 7-------------------------
+
+ // Function to display counting from start to end number
+//  function displayCounting(start, end) {
+//             var counting = "";
+//             for (var i = start; i <= end; i++) {
+//                 counting += i + "<br>";
+//             }
+//             document.write(counting);
+        // }
+
+        // Example usage: Prompt the user for start and end numbers
+        // function promptAndDisplayCounting() {
+            // Prompt the user to enter the start number
+            // var startNumber = prompt("Enter the start number:");
+
+            // Prompt the user to enter the end number
+            // var endNumber = prompt("Enter the end number:");
+
+            // Convert the inputs to numbers and display the counting
+            // displayCounting(parseInt(startNumber), parseInt(endNumber));
+        // }
+
+        // Call the function to prompt the user and display the counting
+        // promptAndDisplayCounting();
+
+//  Q  no 8: ----------------------
+
+// Outer function to calculate the hypotenuse
+// function calculateHypotenuse(base, perpendicular) {
+            // Inner function to calculate the square of a number
+            // function calculateSquare(num) {
+                // return num * num;
+            // }
+
+            // Calculate the hypotenuse using the Pythagorean theorem
+            // var hypotenuse = Math.sqrt(calculateSquare(base) + calculateSquare(perpendicular));
+            // return hypotenuse;
+        // }
+
+        // Example usage: Prompt the user for base and perpendicular
+        // function promptAndCalculateHypotenuse() {
+        //     var base = prompt("Enter the base of the right-angle triangle:");
+        //     var perpendicular = prompt("Enter the perpendicular of the right-angle triangle:");
+
+            // Convert inputs to numbers and calculate the hypotenuse
+            // var result = calculateHypotenuse(parseFloat(base), parseFloat(perpendicular));
+
+            // Display the result in the browser
+            // document.write("The hypotenuse of the right-angle triangle is: " + result);
+        // }
+
+        // Call the function to prompt the user and display the hypotenuse
+        // promptAndCalculateHypotenuse();
+
+//  Q no 9:-------------------------
+
+
+        // Function to calculate the area of a rectangle
+        // function calculateArea(width, height) {
+        //     return width * height;
+        // }
+
+        // Example i: Arguments as values
+        // function areaWithValues() {
+        //     var area1 = calculateArea(5, 10); // Width = 5, Height = 10
+        //     document.write("Area when passing values directly: " + area1 + "<br>");
+        // }
+
+        // Example ii: Arguments as variables
+        // function areaWithVariables() {
+        //     var rectWidth = 7;
+        //     var rectHeight = 12;
+        //     var area2 = calculateArea(rectWidth, rectHeight);
+        //     document.write("Area when passing variables: " + area2 + "<br>");
+        // }
+
+        // Call both functions to display results
+        // areaWithValues();
+        // areaWithVariables();
+
+//  Q no 10: ---------------------
+
+ // Function to check if a string is a palindrome
+//  function isPalindrome(str) {
+            // Convert the string to lowercase and remove non-alphanumeric characters
+            // var cleanedStr = str.toLowerCase().replace(/[^a-z0-9]/g, '');
+
+            // Reverse the cleaned string
+            // var reversedStr = cleanedStr.split('').reverse().join('');
+
+            // Check if the original cleaned string is the same as the reversed string
+            // return cleanedStr === reversedStr;
+        // }
+
+        // Function to prompt user for a string and display whether it is a palindrome
+        // function checkPalindrome() {
+            // var userInput = prompt("Enter a word or phrase to check if it's a palindrome:");
+
+            // if (isPalindrome(userInput)) {
+                // document.write("'" + userInput + "' is a palindrome.");
+            // } else {
+                // document.write("'" + userInput + "' is not a palindrome.");
+            // }
+        // }
+
+        // Call the function to check for palindrome
+        // checkPalindrome();
+
+//  Q no 11: ----------------
+
+
+// Function to capitalize the first letter of each word
+// function capitalizeWords(str) {
+            // Split the string into an array of words
+            // var wordsArray = str.split(' ');
+
+            // Iterate through each word in the array
+            // for (var i = 0; i < wordsArray.length; i++) {
+                // Capitalize the first letter of the word and concatenate with the rest of the word
+                // wordsArray[i] = wordsArray[i].charAt(0).toUpperCase() + wordsArray[i].slice(1);
+            // }
+
+            // Join the array back into a single string
+            // return wordsArray.join(' ');
+        // }
+
+        // Example usage
+        // function showCapitalizedString() {
+            // var exampleString = 'the quick brown fox';
+            // var capitalizedString = capitalizeWords(exampleString);
+            // document.write("Original String: " + exampleString + "<br>");
+            // document.write("Capitalized String: " + capitalizedString);
+        // }
+
+        // Call the function to display the result
+        // showCapitalizedString();
+
+//  Qno: 12----------------------------
+
+// Function to find the longest word in a string
+// function findLongestWord(str) {
+            // Split the string into an array of words
+            // var wordsArray = str.split(' ');
+
+            // Initialize a variable to keep track of the longest word
+            // var longestWord = '';
+
+            // Iterate through each word in the array
+            // for (var i = 0; i < wordsArray.length; i++) {
+                // Check if the current word is longer than the longest word found so far
+                // if (wordsArray[i].length > longestWord.length) {
+                    // longestWord = wordsArray[i];
+                // }
+            // }
+
+            // Return the longest word
+            // return longestWord;
+        // }
+
+        // Example usage
+        // function showLongestWord() {
+        //     var exampleString = 'Web Development Tutorial';
+        //     var longestWord = findLongestWord(exampleString);
+        //     document.write("Original String: " + exampleString + "<br>");
+        //     document.write("Longest Word: " + longestWord);
+        // }
+
+        // Call the function to display the result
+        // showLongestWord();
+
+        // Q no: 13------------------------------------
+
+
+ // Function to count occurrences of a specified letter in a string
+//  function countLetterOccurrences(str, letter) {
+            // Initialize a counter to keep track of occurrences
+            // var count = 0;
+
+            // Loop through each character in the string
+            // for (var i = 0; i < str.length; i++) {
+                // If the current character matches the specified letter, increment the count
+                // if (str.charAt(i) === letter) {
+                    // count++;
+                // }
+            // }
+
+            // Return the final count
+            // return count;
+        // }
+
+        // Example usage
+        // function showLetterCount() {
+            // var exampleString = 'JSResourceS.com';
+            // var letterToCount = 'o';
+            // var count = countLetterOccurrences(exampleString, letterToCount);
+            // document.write("String: " + exampleString + "<br>");
+            // document.write("Letter to count: " + letterToCount + "<br>");
+            // document.write("Occurrences of '" + letterToCount + "': " + count);
+        // }
+
+        // Call the function to display the result
+        // showLetterCount();
+
+//  Q no 14: ---------------------------- 
+
+    // Function to calculate the circumference of a circle
+        // function calcCircumference(radius) {
+        //     var circumference = 2 * Math.PI * radius;
+        //     document.write("The circumference is " + circumference.toFixed(2) + "<br>");
+        // }
+
+        // Function to calculate the area of a circle
+        // function calcArea(radius) {
+        //     var area = Math.PI * Math.pow(radius, 2);
+        //     document.write("The area is " + area.toFixed(2));
+        // }
+
+        // Example usage
+        // function showCircleProperties() {
+        //     var radius = 5; // You can change this value to test with different radii
+        //     calcCircumference(radius);
+        //     calcArea(radius);
+        // }
+
+        // Call the function to display the results
+        // showCircleProperties();
+
+    </script>
+
+</script>
+</html>
